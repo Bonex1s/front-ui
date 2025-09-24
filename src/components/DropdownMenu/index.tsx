@@ -20,7 +20,7 @@ interface DropdownMenuProps {
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, groups }) => {
   return (
     <div className='relative group inline-block'>
-      <button className='flex items-center py-2 px-4 rounded-md bg-white'>
+      <button className='flex items-center py-2 px-4 rounded-md bg-white hover:text-amber-200'>
         {title}
         <ChevronDown className='pl-2'/>
       </button>

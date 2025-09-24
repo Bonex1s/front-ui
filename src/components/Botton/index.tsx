@@ -1,8 +1,8 @@
-import Preloader from "components/Preloader";
+import Preloader from 'components/Preloader';
 
-import cls from "utils/cls";
+import cls from 'utils/cls';
 
-type IButtonTheme = "primary";
+type IButtonTheme = 'primary';
 
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isPending: boolean;
@@ -11,7 +11,7 @@ interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const byTheme = {
-  primary: "bg-black hover:bg-gray-900 text-white",
+  primary: 'bg-black hover:bg-gray-900 text-white',
 } satisfies Record<IButtonTheme, string>;
 
 export default function Button({
@@ -26,13 +26,13 @@ export default function Button({
       disabled={isPending}
       type={type}
       className={cls(
-        "w-full px-4 py-2 font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-black",
+        'w-full px-4 py-2 font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-black',
         byTheme[theme],
-        isPending && "flex gap-2 items-center justify-center"
+        isPending && 'flex gap-2 items-center justify-center'
       )}
       {...props}
     >
-      {isPending && <Preloader size="sm" />}
+      {isPending && <Preloader size='sm' />}
       {children}
     </button>
   );
