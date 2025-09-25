@@ -7,19 +7,8 @@ const localize = {
 
   Search: 'Пошук',
   UploadImage: 'Додати фото',
-  BrandCreate: 'Додати бренд',
 
   Dashboard: 'Головна сторінка',
-  Offline: 'Продаж офлайн',
-  Online: 'Продаж онлайн',
-  SalesAccount: 'Продаж рахунок',
-  Bonuses: 'Бонусні товари',
-  Shares: 'Акції',
-  CliestBase: 'Клієнтська база',
-  Article: 'Статті',
-  Managers: 'Менеджери',
-  ManagersArticle: 'Статті для менеджерів',
-  Slider: 'Слайдер',
   
   Product: 'Номенклатура',
   ProductCreate: 'Створити товар',
@@ -32,32 +21,9 @@ const localize = {
   Save: 'Зберегти',
 
   Title: 'Заголовок',
-  ProductType: 'Тип номенклатури',
-  ProductColor: 'Колір',
-  ProductBarcode: 'Код',
-  ProductDescription: 'Опиc товару',
-  Discount: 'Знижка',
-  Price: 'Ціна',
-  Stock: 'Наявність',
-  UrlPage: 'Адреса сторінки',
-  RozetkaTitle: 'Заголовок для Rozetka',
-  ImgInput: 'Додати зображення',
-  // brand
-  BrandTitle: 'Назва бренду',
-  BrandDescription: 'Опис бренду',
-  BrandType: 'Тип бренду',
-  BrandSelect: 'Вибір бренду',
-  BrandAddNew: 'Додати бренд',
 
-  // category
   CategorySelect: 'Категорія',
-
-  // client
-  Clients: 'Клієнти',
-  ClientList: 'Список клієнтів',
-  ClientCreate: 'Створити клієнта',
-  ClientUpdate: 'Оновити клієнта',
-  ClientDelete: 'Видалити клієнта',
+  // category
 
   HeaderTitle: ['Чохли', 'Скло', 'Телефони', 'Зарядний пристрій', 'Гаджети', 'Ще'],
   // CARDS
