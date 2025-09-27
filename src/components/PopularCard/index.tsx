@@ -3,7 +3,7 @@ import localize from 'utils/localize';
 
 export default function PopularCard() {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 justify-items-center gap-y-10 my-10'>
+    <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 px-4 md:px-10 lg:mx-20 my-10'>
       {localize.temporaryCards.map(item => (
         <Card
           key={item.id}

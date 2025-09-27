@@ -13,8 +13,8 @@ export default function Header() {
   return (
     <>
       <PromoBanner />
-      <div className='border border-gray-200 sticky top-0 py-3 z-10 bg-white'>
-        <div className='flex flex-row items-center justify-start'>
+      <div className='sticky border border-gray-200 top-0 py-3 z-10 bg-white'>
+        <div className='relative flex flex-row items-center justify-start'>
           <Link to={routers.product} className='w-23 pl-6'>
             <Logo />
           </Link>
