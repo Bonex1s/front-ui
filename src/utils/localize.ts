@@ -61,7 +61,14 @@ const localize = {
         { id: 3, label: 'Xiaomi mi 14 pro' },
       ], },
       
-  ]
+  ],
+  brandUrls : [
+    { id: 1, url: 'src/assets/Blueo logo.png', alt: 'Blueo' },
+    { id: 2, url: 'src/assets/Spigen logo.png', alt: 'Spigen' },
+    { id: 3, url: 'src/assets/ESR logo.png', alt: 'ESR' },
+    { id: 4, url: 'src/assets/Benks logo.jpg', alt: 'Benks' },
+    { id: 5, url: 'src/assets/Nativeunion logo.webp', alt: 'Native union' },
+  ],
 
 };
 
