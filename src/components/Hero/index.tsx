@@ -1,9 +1,7 @@
-export default function Hero () {
+const Hero = () => {
   return (
-    <>
-      <img src='src/assets/maikaibanner.jpg' alt='heroimg' />
-
-    </>
+    <><img src='src/assets/maikaibanner.jpg' alt='heroimg' /></>
   );
-}
+};
+export default Hero;  
 

@@ -9,7 +9,7 @@ import {
 
 import { User } from 'lucide-react';
 
-export default function AccountMenu() {
+const AccountMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className='text-black w-5 hover:cursor-pointer hover:text-main'><User /></DropdownMenuTrigger>
@@ -23,4 +23,5 @@ export default function AccountMenu() {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-}
+};
+export default AccountMenu;

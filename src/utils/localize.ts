@@ -70,6 +70,13 @@ const localize = {
     { id: 5, url: 'src/assets/Nativeunion logo.webp', alt: 'Native union' },
   ],
 
+  newsBlock: [
+    { id: 1, title: 'Найкращі смартфони вересня: топ-8 новинок місяця', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/upscalemedia-transformed.jpeg', alt: 'news1' },
+    { id: 2, title: 'Xiaomi 17 пророкують провал — через низький попит та iPhone 17', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/1_1759219854_lh_average_step_6.jpg', alt: 'news2' },
+    { id: 3, title: 'Motorola вирішила здивувати товщиною: новий Moto X70 Air може стати найтоншим смартфоном року', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/moto-X70-Air-teaser-1-1024x618-1.jpg', alt: 'news3' },
+    { id: 4, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3' },
+  ],
+
 };
 
 export default localize;

@@ -3,6 +3,7 @@ import Hero from 'components/Hero';
 import Popular from 'components/Popular';
 import Brends from 'components/Brends';
 import CategotyMenu from '@/components/CategoryMenu';
+import NewsBlock from '@/components/News';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
             <Popular/>
             <Brends/>
             <CategotyMenu/>
+            <NewsBlock/>
           </div>
         </div>
       </section>

@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, price, imageUrl, ...props }) => {
   return (
-    <div className='w-72 h-112 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition'>
+    <div className='w-72 h-112 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-104 duration-300 m-4'>
       <div className='aspect-square bg-white flex items-center justify-center overflow-hidden'>
         {imageUrl ? (
           <img

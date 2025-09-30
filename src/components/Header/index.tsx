@@ -9,7 +9,7 @@ import localize from 'utils/localize';
 import AccountMenu from 'components/Account';
 import SheetMenu from '../Sheet';
 
-export default function Header() {
+const Header = () => {
   return (
     <>
       <PromoBanner />
@@ -47,4 +47,6 @@ export default function Header() {
         </div>
       </div></>
   );
-}
+};
+
+export default Header;
