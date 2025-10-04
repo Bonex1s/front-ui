@@ -24,7 +24,6 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, groups }) => {
         {title}
         <ChevronDown className='pl-2'/>
       </button>
-
       <div className='absolute left-0 w-screen bg-white shadow-lg z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition flex gap-8 p-8'>
         {groups.map(group => (
           <div key={group.title}>

@@ -11,7 +11,7 @@ export default function Rating({ rating }: { rating: number }) {
             </span>
           ))}
       </div>
-      <span className='text-gray-700 font-medium text-sm'>{rating}.0</span>
+      <span className='text-gray-700 font-medium text-sm'></span>
     </div>
   );
 }

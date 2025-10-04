@@ -18,7 +18,6 @@ const Header = () => {
           <Link to={routers.product} className='w-23 pl-6'>
             <Logo />
           </Link>
-          
           <ul className='flex text-sm font-medium text-gray-600 ml-10'>
             {localize.HeaderTitle.map((item, index) => (
               <li key={index} className='px-4 hover:text-main hover:cursor-pointer'>
@@ -39,10 +38,8 @@ const Header = () => {
             >
               <Heart />
             </button>
-            <SheetMenu/>
-            
+            <SheetMenu/>  
             <AccountMenu/>
-            
           </div>
         </div>
       </div></>

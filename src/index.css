@@ -25,6 +25,10 @@ body {
   margin: 0 auto;
 }
 
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+}
+
 form div[data-error="true"] label {
   @apply text-red;
 }
