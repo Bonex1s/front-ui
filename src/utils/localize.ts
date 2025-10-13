@@ -1,3 +1,4 @@
+
 const localize = {
   Email: 'Email',
   Password: 'Пароль',
@@ -33,9 +34,9 @@ const localize = {
     { id: 3, rating: 4, title: 'Чохол AmazingThing Cloudie Case for iPhone 17 Pro with MagSafe Black', price: '799грн', imageUrl: 'https://thegadget.ua/images/products/dd6833c614ef33ef9a09e088b4d0170a89b2b1a88b118422be0b98ea89491c72.webp' },
     { id: 4, rating: 5, title: 'Чохол UAG для iPhone 17 Pro, Scout Clear MagSafe, Ice/White', price: '499грн', imageUrl: 'https://thegadget.ua/images/products/5dd9a0293ea7df0807c094aeac20d5cda4054d058cdd0d666dfc3f467864e45c.webp' },
     { id: 5, rating: 2, title: 'Чохол UAG для iPhone 17 Pro, Essential Armor MagSafe, Ash', price: '899грн', imageUrl: 'https://thegadget.ua/images/products/5dd9a0293ea7df0807c094aeac20d5cda4054d058cdd0d666dfc3f467864e45c.webp' },
-    { id: 6, rating: 2, title: 'Чохол AmazingThing Minimal Air Case for iPhone 17 Pro with MagSafe Blue', price: '1899грн', imageUrl: 'https://thegadget.ua/images/products/f3fec5cf1abefd0090a3fef232b5070b2b410bd57985b184592a1ee2b7f4d1da.webp' },
-    { id: 6, rating: 5, title: 'Автотримач HOCO DCA62 Magnetic/Vacuum Black', price: '1899грн', imageUrl: 'https://thegadget.ua/images/products/f3fec5cf1abefd0090a3fef232b5070b2b410bd57985b184592a1ee2b7f4d1da.webp' },
-    { id: 6, rating: 1, title: 'Чохол Benks ArmorAir Case built with Kevlar 600D for iPhone 17 Pro Black', price: '2899грн', imageUrl: 'https://thegadget.ua/images/products/5993c78b7091ccf0bbfaa952c4c5cd8b8f54bd5d50a7a573a27e8e9b4bb03e46.webp' },
+    { id: 7, rating: 2, title: 'Чохол AmazingThing Minimal Air Case for iPhone 17 Pro with MagSafe Blue', price: '1899грн', imageUrl: 'https://thegadget.ua/images/products/f3fec5cf1abefd0090a3fef232b5070b2b410bd57985b184592a1ee2b7f4d1da.webp' },
+    { id: 8, rating: 5, title: 'Автотримач HOCO DCA62 Magnetic/Vacuum Black', price: '1899грн', imageUrl: 'https://thegadget.ua/images/products/f3fec5cf1abefd0090a3fef232b5070b2b410bd57985b184592a1ee2b7f4d1da.webp' },
+    { id: 9, rating: 1, title: 'Чохол Benks ArmorAir Case built with Kevlar 600D for iPhone 17 Pro Black', price: '2899грн', imageUrl: 'https://thegadget.ua/images/products/5993c78b7091ccf0bbfaa952c4c5cd8b8f54bd5d50a7a573a27e8e9b4bb03e46.webp' },
   ],
 
   caseSubMenu: [
@@ -62,7 +63,7 @@ const localize = {
       ], },
       
   ],
-  brandUrls : [
+  brandUrls: [
     { id: 1, url: 'src/assets/Blueo logo.png', alt: 'Blueo' },
     { id: 2, url: 'src/assets/Spigen logo.png', alt: 'Spigen' },
     { id: 3, url: 'src/assets/ESR logo.png', alt: 'ESR' },
@@ -74,14 +75,53 @@ const localize = {
     { id: 1, title: 'Найкращі смартфони вересня: топ-8 новинок місяця', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/upscalemedia-transformed.jpeg', alt: 'news1', date: '20.09.2025', time: '21:15' },
     { id: 2, title: 'Xiaomi 17 пророкують провал — через низький попит та iPhone 17', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/1_1759219854_lh_average_step_6.jpg', alt: 'news2', date: '20.09.2025', time: '18:30' },
     { id: 3, title: 'Motorola вирішила здивувати товщиною: новий Moto X70 Air може стати найтоншим смартфоном року', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/moto-X70-Air-teaser-1-1024x618-1.jpg', alt: 'news3', date: '20.09.2025', time: '18:30' },
+    { id: 4, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
     { id: 5, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
     { id: 6, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
     { id: 7, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
-    { id: 7, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
-    { id: 7, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
-    { id: 7, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
-    { id: 7, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
-    { id: 7, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025',},
+    { id: 8, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
+    { id: 9, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
+    { id: 10, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025', time: '18:30' },
+    { id: 11, title: '5 гаджетів, які можуть реально врятувати життя в екстремальній ситуації', url: 'https://itsider.com.ua//catalog/uploaded/2025/09/intro-1757535389-1.webp', alt: 'news3',date: '20.09.2025',},
+  ],
+
+  FooterMenu: [
+    { title: 'Бренди',
+      items: [
+        { id: 1, sub: 'Бренди'},
+        { id: 2, sub: 'Статті'},
+        { id: 3, sub: 'Конфіденційність'},
+        { id: 4, sub: 'Про нас'},
+        { id: 5, sub: 'Карєра'},
+      ]
+    } ,
+    { title: 'Підтримка',
+      items: [
+        { id: 1, sub: 'Гарантія'},
+        { id: 2, sub: 'Доставка и оплата'},
+        { id: 3, sub: 'Обмін та повернення'},
+        { id: 4, sub: 'Контакти'},
+        { id: 5, sub: 'FAQ'},
+      ]
+    },
+    { title: 'Інше',
+      items: [
+        { id: 1, sub: 'Мій аккаунт'},
+        { id: 2, sub: 'Політика винагороди'},
+        { id: 3, sub: 'Конфіденційність'},
+        { id: 4, sub: 'Про нас'},
+        { id: 5, sub: 'Карєра'},
+      ]
+    },
+    { title: 'Бренди',
+      items: [
+        { id: 1, sub: 'Бренди'},
+        { id: 2, sub: 'Статті'},
+        { id: 3, sub: 'Конфіденційність'},
+        { id: 4, sub: 'Про нас'},
+        { id: 5, sub: 'Карєра'},
+      ]
+    },  
   ],
 
 };

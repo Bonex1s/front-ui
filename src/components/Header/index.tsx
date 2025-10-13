@@ -15,7 +15,7 @@ const Header = () => {
       <PromoBanner />
       <div className='sticky border border-gray-200 top-0 py-3 z-10 bg-white'>
         <div className='relative flex flex-row items-center justify-start'>
-          <Link to={routers.product} className='w-23 pl-6'>
+          <Link to={routers.home} className='w-23 pl-6'>
             <Logo />
           </Link>
           <ul className='flex text-sm font-medium text-gray-600 ml-10'>

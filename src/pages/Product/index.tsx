@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
@@ -5,7 +7,8 @@ export default function Home() {
       <section>
         <div className='w-full'>
           <div  className='text-2xl font-bold'>
-            PRODuct
+            <Header/>
+            <Footer/>
           </div>
         </div>
       </section>

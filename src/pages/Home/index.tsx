@@ -2,8 +2,11 @@ import Header from 'components/Header';
 import Hero from 'components/Hero';
 import Popular from 'components/Popular';
 import Brends from 'components/Brends';
-import CategotyMenu from '@/components/CategoryMenu';
-import NewsBlock from '@/components/News';
+import CategoryMenu from '@/components/CategoryMenu';
+import NewsBlock from '@/components/NewsBlock';
+import  Description  from '@/components/Description';
+import ReviewsSlider from '@/components/ReviewsSlider';
+import Footer from 'components/Footer';
 
 export default function Home() {
   return (
@@ -15,8 +18,11 @@ export default function Home() {
             <Hero />
             <Popular/>
             <Brends/>
-            <CategotyMenu/>
+            <CategoryMenu/>
             <NewsBlock/>
+            <Description/>
+            <ReviewsSlider/> 
+            <Footer/> 
           </div>
         </div>
       </section>

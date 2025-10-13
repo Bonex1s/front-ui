@@ -5,14 +5,14 @@
 
 @theme {
   --color-red: #ff0000;
+  --color-primary: #FFE082;
+  --color-main: #FFE082;
+  --color-main-hover: #05ccbd;
 
-  --color-primary: #05ccbd;
-  --color-primary-hover: #05ccbd;
-
-  --color-green: #00b300;
+  --color-greeen: #00b300;
   --color-green-hover: #00b300;
 
-  --color-beigeCustom: #F5F5DC;
+  --color-beigeCustom: #FFE082;
 }
 
 body {
@@ -23,6 +23,9 @@ body {
 .main-section {
   max-width: 100rem;
   margin: 0 auto;
+}
+.btn-primary {
+  @apply px-8 py-2 text-sm font-thin border border-black hover:bg-black hover:text-white transition;
 }
 
 .text-stroke {

@@ -1,7 +1,7 @@
-
 export const routers = {
   home: '/dashboard',
-  product: '/products',
+  product: '/product',
+  productCollection: '/products',
 
   notFound: '/404',
   productDetail: '/product',
