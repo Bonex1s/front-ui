@@ -13,10 +13,10 @@ const NewsBlock = () => {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto w-[85%]'>
         {newsToShow.map((item, id) => (
-          <Link to={'/'} key={id} className='flex items-center text-sm bg-white shadow p-3 rounded-sm'>
+          <Link to={'/'} key={id} className='flex items-center text-sm bg-white shadow p-3'>
             <div className='w-[240px] h-[135px] flex-shrink-0 overflow-hidden mr-4'>
               <img
-                className='w-full h-full object-cover rounded-sm'
+                className='w-full h-full object-cover'
                 src={item.url}
                 alt={item.alt}
               />

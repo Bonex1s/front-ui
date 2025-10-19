@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PopularCard from '../PopularCard';
 import buttonClass from '@/utils/classButton';
+import Pagination from '../Pagination';
 
 export default function Popular() {
   const [activeButton, setActiveButton] = useState('popular');
@@ -12,7 +13,7 @@ export default function Popular() {
       </div>
       {activeButton === 'popular' && <PopularCard />}
       {activeButton === 'all' && <div className='flex justify-center mt-20 mb-20 text-2xl font-semibold h-200 w-full '>Скоро буде...</div>}
-      
+      <Pagination />      
     </>
   );
 }

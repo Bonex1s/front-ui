@@ -17,7 +17,7 @@ const FooterMenu: React.FC = () => {
   >   
     {localize.FooterMenu.map((menu: FooterMenuBlock, index: number) => (
       <div key={index}>
-        <p className='font-medium text-main dark:text-white'>{menu.title}</p>
+        <p className='font-medium text-main text-lg dark:text-white'>{menu.title}</p>
         <ul className='mt-6 space-y-4 text-sm'>
           {menu.items.map(item => (
             <li key={item.id}>

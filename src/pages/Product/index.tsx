@@ -1,18 +1,12 @@
-import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ProductInfo from '@/components/ProductInfo';
 
-export default function Home() {
-  return (
-    <main>
-      <section>
-        <div className='w-full'>
-          <div  className='text-2xl font-bold'>
-            <Header/>
-            <Footer/>
-          </div>
-        </div>
-      </section>
-      
-    </main>
-  );
-}
+const ProdutPage = () => {
+  return <>
+    <Header/>
+    <ProductInfo/>
+    <Footer/>
+  </>;
+};   
+export default ProdutPage;

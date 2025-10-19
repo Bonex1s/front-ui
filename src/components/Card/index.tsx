@@ -8,11 +8,12 @@ interface CardProps {
   price: string;
   imageUrl?: string;
   rating?: number;
+  className?: string;
 }  
 
-const Card: React.FC<CardProps> = ({ title, price, imageUrl, ...props }) => {
+const Card: React.FC<CardProps> = ({ title, price, imageUrl, className, ...props }) => {
   return (
-    <div className='w-72 h-112 bg-white  overflow-hidden hover:shadow-lg transition hover:scale-104 duration-300 m-4 rounded-sm'>
+    <div className={`bg-white overflow-hidden hover:shadow-lg transition-transform hover:scale-105 duration-300 m-auto rounded-sm ${className}`}>
       <div className='aspect-square bg-white flex items-center justify-center overflow-hidden'>
         {imageUrl ? (
           <img
@@ -24,7 +25,7 @@ const Card: React.FC<CardProps> = ({ title, price, imageUrl, ...props }) => {
           <span className='text-gray-400 text-sm'>No Image</span>
         )}
       </div>
-      <Link to={routers.productCollection} className='p-4'>
+      <Link to={routers.product} className='p-4'>
         <h3 className='line-clamp-3 h-15 text-sm font-semibold mb-2 px-4'>{title}</h3>
         <p className='text-gray-600 text-sm text-center font-thin'>{price}</p>
         <div className='mt-2 flex justify-center'>
