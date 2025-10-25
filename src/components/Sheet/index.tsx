@@ -1,24 +1,22 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
+
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { ShoppingCart } from 'lucide-react';
+import{ ShoppingCart }from 'lucide-react';
+import Cart from '../Cart';
+import localize from '@/utils/localize';
 
 export default function SheetMenu() {
+  const product = localize.temporaryCards.slice(0, 2);
   return (
     <Sheet>
       <SheetTrigger className='text-black w-5 hover:cursor-pointer hover:text-main'><ShoppingCart /></SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
-          <SheetDescription>
-            This action cannot be undone. This will permanently delete your account
-            and remove your data from our servers.
-          </SheetDescription>
+          <Cart product={product} />
         </SheetHeader>
       </SheetContent>
     </Sheet>

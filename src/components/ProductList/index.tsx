@@ -281,6 +281,7 @@ const ProductList = () => {
               {localize.temporaryCards.map(item => (
                 <Card
                   key={item.id}
+                  id={item.id}
                   title={item.title}
                   price={item.price}
                   imageUrl={item.imageUrl}

@@ -1,38 +1,59 @@
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import Breadcrumb from '../Breadcrumb';
+import ProductGallery from '../ProductGallery';
+import localize from '@/utils/localize';
+import ColorSelector from '../ColorSelect';
 
 const ProductInfo = () => {
-  return <>     
+  const { id } = useParams<{ id: string }>();
+  const product = localize.temporaryCards.find(item => item.id === Number(id));
+  const [selectedColor, setSelectedColor] = useState<string>(
+    product?.variants?.[0]?.colorName || ''
+  );
+  const currentVariant = product?.variants?.find(
+    v => v.colorName === selectedColor
+  );
+  if (!product) {
+    return <p className='p-10 text-center text-gray-700'>Товар не знайдено</p>;
+  }
+  const imagesToShow =
+    currentVariant?.images?.length && selectedColor
+      ? currentVariant.images
+      : product.imageUrl;
+  return (
     <div>
-      <Breadcrumb />  
+      <Breadcrumb title={product.title} />
       <div className='flex justify-center min-h-screen p-10 w-11/12 mx-auto'>
-        <div>
-          <div className='flex h-120 mb-4'>
-            <img src='https://thegadget.ua/images/products/2396a0cb59e3f16f27f7c7e7d91df9f2b323ce5e3732e73dce86cc9b08f54d85.webp' alt='' />
-          </div>
-          <div className='flex w-20 h-20'>
-            <img src='https://thegadget.ua/images/products/5858950487af96ae772dcf655c0e899031ec5cb01db4c8be66b69210af1dada9.webp' alt='' />
-            <img src='https://thegadget.ua/images/products/5858950487af96ae772dcf655c0e899031ec5cb01db4c8be66b69210af1dada9.webp' alt='' />
-            <img src='https://thegadget.ua/images/products/5858950487af96ae772dcf655c0e899031ec5cb01db4c8be66b69210af1dada9.webp' alt='' />
-            <img src='https://thegadget.ua/images/products/5858950487af96ae772dcf655c0e899031ec5cb01db4c8be66b69210af1dada9.webp' alt='' />
-          </div>
-            
-        </div>
+        {/* Галерея картинок */}
+        <ProductGallery images={imagesToShow} />
         <div className='flex flex-col ml-10 gap-4 w-1/2'>
-          <h1 className='font-bold text-xl'>Шкіряний чохол Leather Case (AAA) with stand для Samsung Galaxy Z Fold7 (Black)</h1>
+          <h1 className='font-bold text-xl'>{product.title}</h1>
           <p className='text-black/50'>Код товару: 2000000128740</p>
-          <ul className='grid grid-cols-2 gap-10'  >
-            <li>✔ Якісна та дорога шкіра</li>
-            <li>✔ Якісна та дорога шкіра</li>
-            <li>✔ Якісна та дорога шкіра</li>
-            <li>✔ Якісна та дорога шкіра</li>
+          <ul className='grid grid-cols-2 gap-10 text-sm text-gray-700'>
+            <li>✔ Якісна шкіра</li>
+            <li>✔ Елегантний дизайн</li>
+            <li>✔ Надійний захист корпусу</li>
+            <li>✔ Приємний на дотик матеріал</li>
           </ul>
-
-          <h2>₴799.00</h2>
-          <button>Add to Cart</button>
+          {product.variants && product.variants.length > 0 && (
+            <ColorSelector
+              colors={product.variants.map(v => ({
+                colorName: v.colorName,
+                colorHex: v.colorHex,
+              }))}
+              selectedColor={selectedColor}
+              onSelect={setSelectedColor}
+            />
+          )}
+          <h2 className='text-lg font-semibold'>{product.price}</h2>
+          <button className='px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition'>
+            Додати в кошик
+          </button>
         </div>
       </div>
     </div>
-  </>;
+  );
 };
 
 export default ProductInfo;

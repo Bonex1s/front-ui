@@ -1,15 +1,16 @@
 import { routers } from '@/utils/consts';
 import { Link } from 'react-router-dom';
 
-const Breadcrumb = () => {
+interface BreadcrumbProps {
+  title: string;
+}
+
+const Breadcrumb: React.FC<BreadcrumbProps> = ({title}) => {
   return <>
     <nav aria-label='Breadcrumb'className='px-8 py-5' >
       <ol className='flex items-center gap-1 text-sm text-gray-700 dark:text-gray-200'>
-        <Link to='/'><li>
-          <a href='#' className='block transition-colors hover:text-gray-900 dark:hover:text-white'>
-            Home
-          </a>
-        </li>
+        <Link to='/' className='block transition-colors hover:text-gray-900 dark:hover:text-white'>
+          <li> Home</li>
         </Link>
         <li className='rtl:rotate-180'>
           <svg
@@ -25,12 +26,8 @@ const Breadcrumb = () => {
             />
           </svg>
         </li>
-        <Link to={routers.productCollection}>
-          <li>
-            <a href='#' className='block transition-colors hover:text-gray-900 dark:hover:text-white'>
-              Category
-            </a>
-          </li>
+        <Link to={routers.productCollection} className='block transition-colors hover:text-gray-900 dark:hover:text-white'>
+          <li>Category</li>
         </Link>
 
         <li className='rtl:rotate-180'>
@@ -50,7 +47,7 @@ const Breadcrumb = () => {
 
         <li>
           <a href='#' className='block transition-colors hover:text-gray-900 dark:hover:text-white'>
-            Product
+            {title}
           </a>
         </li>
       </ol>
